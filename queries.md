@@ -26,6 +26,11 @@ limit 3
 
 ### Display the OrderID, CustomerName and the employee's LastName for every order. All columns should be labeled clearly. Displays 196 records.
 
+SELECT orderid, customername, lastname FROM [Orders] as o
+join customers as c
+on o.customerid = c.customerid
+join employees as e
+on o.employeeid = e.employeeid
 
 
 
